@@ -8,9 +8,27 @@ var fs = require('fs');
 
 var Product = require('../modules/db/products');
 
-
 var url = 'http://www.amazon.in/s/ref=lp_1389401031_pg_1?rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031&page=1&ie=UTF8&qid=1485429430&spIA=B01MCYNO0A,B01LL1J04I,B01LF0I76W'
 var products = [];
+
+function generateUrls(limit) {
+
+    var url1 = 'http://www.amazon.in/s/ref=lp_1389401031_pg_';
+    var url2 = '?rh=n%3A976419031%2Cn%3A!976420031%2Cn%3A1389401031&page=';
+    var url3 = '&ie=UTF8&qid=1485429430&spIA=B01MCYNO0A,B01LL1J04I,B01LF0I76W';
+
+    var urls = [];
+
+    var i;
+    for (i = 1; i < limit; i++) {
+        urls.push(url1 + i + url2 + i + url3);
+        console.log(JSON.stringify(urls));
+    }
+    return urls;
+}
+
+var Pages = generateUrls(3);
+
 
 
 /* GET users listing. */
@@ -49,6 +67,7 @@ router.post('/web/scrape', function(req, res, next) {
             console.log(JSON.stringify(products));
         }
     })
+})
 
 
 /* GET users listing. */
