@@ -10,13 +10,14 @@
     "cheerio": "^0.22.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
+    "ejs": "~2.5.2",
     "express": "~4.14.0",
     "handlebars": "^4.0.6",
-    "ejs": "~2.5.2",
     "mongoose": "^4.7.8",
     "morgan": "~1.7.0",
     "path": "^0.12.7",
     "request": "^2.79.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "synchronize": "^2.0.0"
   }
 }

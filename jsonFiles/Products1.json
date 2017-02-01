@@ -1,0 +1,179 @@
+{
+    "result": {
+        "ok": 1,
+        "n": 24
+    },
+    "ops": [
+        {
+            "productName": "Moto G Plus, 4th Gen (Black, 32 GB) - Android 7.0 Nougat Update Available Now",
+            "price": "  13,999.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8ac"
+        },
+        {
+            "productName": "Lenovo Vibe K5 (Gold, Snapdragon 616, VoLTE update)",
+            "price": "  7,499.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8ad"
+        },
+        {
+            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (Black and Green)",
+            "price": "  308.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8ae"
+        },
+        {
+            "productName": "Tukzer TZ-AC-102-WTBL-WTGY Universal Air Vent Car Mount Mobile Holder (Set of 2, Multicolor)",
+            "price": "  522.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8af"
+        },
+        {
+            "productName": "Tukzer TZ-AC-102-WTBL-BKGY Universal Air Vent Car Mount Mobile Holder (Set of 2, Multicolor)",
+            "price": "  522.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b0"
+        },
+        {
+            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (Black and Grey)",
+            "price": "  308.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b1"
+        },
+        {
+            "productName": "Tukzer TZ-AC-102-WTGY-BKGR Universal Air Vent Car Mount Mobile Holder (Set of 2, Multicolor)",
+            "price": "  522.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b2"
+        },
+        {
+            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (White and Blue)",
+            "price": "  308.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b3"
+        },
+        {
+            "productName": "Tukzer TZ-CC-102-SIL Dual USB 4.8 Amp Universal Car Charger with Glass Breaker Steel Tip (Silver)",
+            "price": "  946.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b4"
+        },
+        {
+            "productName": "Xiaomi Mi Max Prime (Gold, 128GB)",
+            "price": "  19,999.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b5"
+        },
+        {
+            "productName": "Nubia Z11 Mini (Gold)",
+            "price": "  12,999.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b6"
+        },
+        {
+            "productName": "OnePlus 3T (Gunmetal, 64GB)",
+            "price": "  29,999.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b7"
+        },
+        {
+            "productName": "Samsung On7 Pro (Gold)",
+            "price": "  9,990.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b8"
+        },
+        {
+            "productName": "Samsung On5 Pro (Gold)",
+            "price": "  7,990.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8b9"
+        },
+        {
+            "productName": "Lenovo Vibe K5 (Grey, Snapdragon 616, VoLTE update)",
+            "price": "  7,499.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8ba"
+        },
+        {
+            "productName": "Moto G Play, 4th Gen (Black)",
+            "price": "  8,999.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8bb"
+        },
+        {
+            "productName": "SanDisk Ultra MicroSDHC 16GB UHS-I Class 10 Memory Card (SDSQUNB-016G-GN3MN)",
+            "price": "  489.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8bc"
+        },
+        {
+            "productName": "Coolpad Mega 2.5D (Grey)",
+            "price": "  6,999.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8bd"
+        },
+        {
+            "productName": "Samsung Evo+ 32GB Class 10 micro SDHC Card Upto 80 Mbps speed (With adapter)",
+            "price": "  749.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8be"
+        },
+        {
+            "productName": "SanDisk Ultra MicroSDHC 32GB UHS-I Class 10 Memory Card With Adapter (Upto 80mbps Speed)",
+            "price": "  809.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8bf"
+        },
+        {
+            "productName": "Moto G Plus, 4th Gen (White, 32 GB) - Android 7.0 Nougat Update Available Now",
+            "price": "  13,999.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8c0"
+        },
+        {
+            "productName": "Moto G Plus, 4th Gen (Black, 16 GB) - Android 7.0 Nougat Update Available Now",
+            "price": "  12,499.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8c1"
+        },
+        {
+            "productName": "Samsung Evo 16GB Class 10 micro SDHC Card (MB-MP16D/IN)",
+            "price": "  460.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8c2"
+        },
+        {
+            "productName": "Intex IT-PB11K 11000mAH Power Bank (Black)",
+            "price": "  929.00",
+            "rating": "",
+            "_id": "5891c007d12c6132801cc8c3"
+        }
+    ],
+    "insertedCount": 24,
+    "insertedIds": [
+        "5891c007d12c6132801cc8ac",
+        "5891c007d12c6132801cc8ad",
+        "5891c007d12c6132801cc8ae",
+        "5891c007d12c6132801cc8af",
+        "5891c007d12c6132801cc8b0",
+        "5891c007d12c6132801cc8b1",
+        "5891c007d12c6132801cc8b2",
+        "5891c007d12c6132801cc8b3",
+        "5891c007d12c6132801cc8b4",
+        "5891c007d12c6132801cc8b5",
+        "5891c007d12c6132801cc8b6",
+        "5891c007d12c6132801cc8b7",
+        "5891c007d12c6132801cc8b8",
+        "5891c007d12c6132801cc8b9",
+        "5891c007d12c6132801cc8ba",
+        "5891c007d12c6132801cc8bb",
+        "5891c007d12c6132801cc8bc",
+        "5891c007d12c6132801cc8bd",
+        "5891c007d12c6132801cc8be",
+        "5891c007d12c6132801cc8bf",
+        "5891c007d12c6132801cc8c0",
+        "5891c007d12c6132801cc8c1",
+        "5891c007d12c6132801cc8c2",
+        "5891c007d12c6132801cc8c3"
+    ]
+}

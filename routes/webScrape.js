@@ -8,8 +8,8 @@ var fs = require('fs');
 
 var Product = require('../modules/db/products');
 
-var url = 'http://www.amazon.in/s/ref=lp_1389401031_pg_1?rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031&page=1&ie=UTF8&qid=1485429430&spIA=B01MCYNO0A,B01LL1J04I,B01LF0I76W'
 var products = [];
+// var url = 'http://www.amazon.in/s/ref=lp_1389401031_pg_1?rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031&page=1&ie=UTF8&qid=1485429430&spIA=B01MCYNO0A,B01LL1J04I,B01LF0I76W'
 
 function generateUrls(limit) {
 
@@ -20,15 +20,63 @@ function generateUrls(limit) {
     var urls = [];
 
     var i;
-    for (i = 1; i < limit; i++) {
+    for (i = 1; i <= limit; i++) {
         urls.push(url1 + i + url2 + i + url3);
-        console.log(JSON.stringify(urls));
     }
     return urls;
 }
 
-var Pages = generateUrls(3);
 
+/* GET users listing. */
+router.get('/web/scrape/all/:pages', function(req, resp, next) {
+
+    var URLs = generateUrls(req.params.pages);
+    console.log(req.params.pages + "\n total generated URLs" + URLs.length);
+
+    for (URL in URLs) {
+        (function(url, page) {
+            request(url, function(err, res, body) {
+                var $ = cheerio.load(body);
+                var result = '#result_';
+                var i = page * 24;
+                var limit = i + 24;
+                var pages = parseInt(page) + 1;
+                console.log("page : " + pages + " \n results " + i + " to " + limit);
+                for (var j = 0, i; i < limit; i++, j++) {
+                    var productName = $(result + i + ' .s-access-title');
+                    var price = $(result + i + ' .s-price');
+                    var rating = $(result + i + '.a-declarative .a-icon-star .a-icon-alt');
+                    var productNameText = productName.text();
+                    products[j] = { "productName": productNameText, price: price.text(), rating: rating.text(), };
+                }
+
+                Product.addProduct(products, function(err, products) {
+                        if (err) {
+                            console.log("error in insertion of new products : \n" + err);
+                        } else {
+                            fs.writeFile('jsonFiles/Products' + pages + '.json', JSON.stringify(products, null, 4), function(err) {
+                                if (err) {
+                                    console.log("error in file writing : \n" + err);
+                                } else
+                                    console.log('jsonFiles/Products' + pages + '.json writed');
+
+                            })
+
+                        }
+                    })
+                    //console.log(JSON.stringify(products) + "\n count is : " + products.length);
+                console.log('url :- ' + url);
+
+
+            });
+        })(URLs[URL], URL);
+
+    }
+    console.log("please wait for few min to get the results");
+    resp.end("please wait for few min to get the results then check console then database and jsonFiles");
+
+
+})
 
 
 /* GET users listing. */
@@ -73,7 +121,7 @@ router.post('/web/scrape', function(req, res, next) {
 /* GET users listing. */
 router.post('/web/scrape/all', function(req, res, next) {
 
-    
+
     request(req.body.url, function(err, resp, body) {
         if (err) {
             console.log('error occured : ' + err);
