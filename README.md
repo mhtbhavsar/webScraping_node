@@ -11,6 +11,11 @@
 <li> we can also use the url(http://www.amazon.in/s/ref=sr_pg_1?rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031&page=1&ie=UTF8&qid=1485437619&spIA=B01N0P22A1,B01MSXC8JV,B01L7UKDF8,B01MCYNO0A,B01LL1J04I,B01LF0I76W) to scrap the data</li>
 </ul>
 
+#### please use this URL  on browser or postman to run the code
+##### "localhost:3000/web/scrape/all/:pages"
+###### pages is total number of pages 
+###### ex. if you place 3 then it reads 3 pages
+
 ## features
 1) used express.js<br>
 2) mongodb database<br>
