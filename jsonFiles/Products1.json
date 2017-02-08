@@ -6,174 +6,198 @@
     "ops": [
         {
             "productName": "Moto G Plus, 4th Gen (Black, 32 GB) - Android 7.0 Nougat Update Available Now",
-            "price": "  13,999.00",
+            "price": "  13,999",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8ac"
+            "productUrl": "http://www.amazon.in/Moto-Plus-4th-Gen-Black/dp/B01DDP7GZK/ref=lp_1389401031_1_1/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-1",
+            "_id": "5894e020e7c30e33f43b7c65"
         },
         {
             "productName": "Lenovo Vibe K5 (Gold, Snapdragon 616, VoLTE update)",
-            "price": "  7,499.00",
+            "price": "  7,499",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8ad"
-        },
-        {
-            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (Black and Green)",
-            "price": "  308.00",
-            "rating": "",
-            "_id": "5891c007d12c6132801cc8ae"
+            "productUrl": "http://www.amazon.in/Lenovo-Vibe-Snapdragon-VoLTE-update/dp/B01M0ULUC8/ref=lp_1389401031_1_2/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-2",
+            "_id": "5894e020e7c30e33f43b7c66"
         },
         {
             "productName": "Tukzer TZ-AC-102-WTBL-WTGY Universal Air Vent Car Mount Mobile Holder (Set of 2, Multicolor)",
-            "price": "  522.00",
+            "price": "  522",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8af"
-        },
-        {
-            "productName": "Tukzer TZ-AC-102-WTBL-BKGY Universal Air Vent Car Mount Mobile Holder (Set of 2, Multicolor)",
-            "price": "  522.00",
-            "rating": "",
-            "_id": "5891c007d12c6132801cc8b0"
-        },
-        {
-            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (Black and Grey)",
-            "price": "  308.00",
-            "rating": "",
-            "_id": "5891c007d12c6132801cc8b1"
-        },
-        {
-            "productName": "Tukzer TZ-AC-102-WTGY-BKGR Universal Air Vent Car Mount Mobile Holder (Set of 2, Multicolor)",
-            "price": "  522.00",
-            "rating": "",
-            "_id": "5891c007d12c6132801cc8b2"
-        },
-        {
-            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (White and Blue)",
-            "price": "  308.00",
-            "rating": "",
-            "_id": "5891c007d12c6132801cc8b3"
+            "productUrl": "http://www.amazon.in/Tukzer-TZ-AC-102-WTBL-WTGY-Universal-Mobile-Multicolor/dp/B01IRG44OG/ref=lp_1389401031_1_3/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-3",
+            "_id": "5894e020e7c30e33f43b7c67"
         },
         {
             "productName": "Tukzer TZ-CC-102-SIL Dual USB 4.8 Amp Universal Car Charger with Glass Breaker Steel Tip (Silver)",
-            "price": "  946.00",
+            "price": "  946",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8b4"
+            "productUrl": "http://www.amazon.in/Tukzer-TZ-CC-102-SIL-Universal-Charger-Breaker/dp/B0196PL652/ref=lp_1389401031_1_4/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-4",
+            "_id": "5894e020e7c30e33f43b7c68"
         },
         {
-            "productName": "Xiaomi Mi Max Prime (Gold, 128GB)",
-            "price": "  19,999.00",
+            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (Black and Green)",
+            "price": "  308",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8b5"
+            "productUrl": "http://www.amazon.in/Tukzer-Universal-Mount-Mobile-Holder/dp/B01BYEDIVI/ref=lp_1389401031_1_5/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-5",
+            "_id": "5894e020e7c30e33f43b7c69"
         },
         {
-            "productName": "Nubia Z11 Mini (Gold)",
-            "price": "  12,999.00",
+            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (Black and Grey)",
+            "price": "  308",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8b6"
+            "productUrl": "http://www.amazon.in/Tukzer-Universal-Mount-Mobile-Holder/dp/B01BYEU2XA/ref=lp_1389401031_1_6/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-6",
+            "_id": "5894e020e7c30e33f43b7c6a"
+        },
+        {
+            "productName": "Tukzer Air Vent Universal Car Mount Mobile Holder (White and Blue)",
+            "price": "  308",
+            "rating": "",
+            "productUrl": "http://www.amazon.in/Tukzer-Universal-Mount-Mobile-Holder/dp/B01BYELP2M/ref=lp_1389401031_1_7/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-7",
+            "_id": "5894e020e7c30e33f43b7c6b"
+        },
+        {
+            "productName": "Tukzer TZ-AC-102-WTGY-BKGR Universal Air Vent Car Mount Mobile Holder (Set of 2, Multicolor)",
+            "price": "  570",
+            "rating": "",
+            "productUrl": "http://www.amazon.in/Tukzer-TZ-AC-102-WTGY-BKGR-Universal-Mobile-Multicolor/dp/B01I165KC2/ref=lp_1389401031_1_8/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-8",
+            "_id": "5894e020e7c30e33f43b7c6c"
         },
         {
             "productName": "OnePlus 3T (Gunmetal, 64GB)",
-            "price": "  29,999.00",
+            "price": "  29,999",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8b7"
+            "productUrl": "http://www.amazon.in/OnePlus-3T-Gunmetal-64GB/dp/B01FM8M0XE/ref=lp_1389401031_1_9/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-9",
+            "_id": "5894e020e7c30e33f43b7c6d"
         },
         {
-            "productName": "Samsung On7 Pro (Gold)",
-            "price": "  9,990.00",
+            "productName": "Nubia Z11 Mini (Gold)",
+            "price": "  12,999",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8b8"
+            "productUrl": "http://www.amazon.in/Nubia-Z11-Mini-Gold/dp/B01N6MTTV8/ref=lp_1389401031_1_10/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-10",
+            "_id": "5894e020e7c30e33f43b7c6e"
         },
         {
             "productName": "Samsung On5 Pro (Gold)",
-            "price": "  7,990.00",
+            "price": "  7,990",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8b9"
+            "productUrl": "http://www.amazon.in/Samsung-G-550FY-On5-Pro-Gold/dp/B01FM7GGFI/ref=lp_1389401031_1_11/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-11",
+            "_id": "5894e020e7c30e33f43b7c6f"
+        },
+        {
+            "productName": "Samsung On7 Pro (Gold)",
+            "price": "  9,990",
+            "rating": "",
+            "productUrl": "http://www.amazon.in/Samsung-G-600FY-On7-Pro-Gold/dp/B01DDP7D6W/ref=lp_1389401031_1_12/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-12",
+            "_id": "5894e020e7c30e33f43b7c70"
+        },
+        {
+            "productName": "Xiaomi Redmi 3S Prime (Gold, 32GB)",
+            "price": "  8,999",
+            "rating": "",
+            "productUrl": "http://www.amazon.in/Xiaomi-Redmi-3S-Prime-Gold/dp/B01LZW92W0/ref=lp_1389401031_1_13/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-13",
+            "_id": "5894e020e7c30e33f43b7c71"
         },
         {
             "productName": "Lenovo Vibe K5 (Grey, Snapdragon 616, VoLTE update)",
-            "price": "  7,499.00",
+            "price": "  7,499",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8ba"
+            "productUrl": "http://www.amazon.in/Lenovo-Vibe-Snapdragon-VoLTE-update/dp/B01M07568E/ref=lp_1389401031_1_14/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-14",
+            "_id": "5894e020e7c30e33f43b7c72"
         },
         {
             "productName": "Moto G Play, 4th Gen (Black)",
-            "price": "  8,999.00",
+            "price": "  8,999",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8bb"
+            "productUrl": "http://www.amazon.in/Moto-Play-4th-Gen-Black/dp/B01FM7GIR4/ref=lp_1389401031_1_15/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-15",
+            "_id": "5894e020e7c30e33f43b7c73"
         },
         {
-            "productName": "SanDisk Ultra MicroSDHC 16GB UHS-I Class 10 Memory Card (SDSQUNB-016G-GN3MN)",
-            "price": "  489.00",
+            "productName": "Xiaomi Mi Max Prime (Gold, 128GB)",
+            "price": "  19,999",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8bc"
+            "productUrl": "http://www.amazon.in/Xiaomi-Mi-Max-Prime-128GB/dp/B01DDP7MC2/ref=lp_1389401031_1_16/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-16",
+            "_id": "5894e020e7c30e33f43b7c74"
         },
         {
             "productName": "Coolpad Mega 2.5D (Grey)",
-            "price": "  6,999.00",
+            "price": "  6,999",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8bd"
-        },
-        {
-            "productName": "Samsung Evo+ 32GB Class 10 micro SDHC Card Upto 80 Mbps speed (With adapter)",
-            "price": "  749.00",
-            "rating": "",
-            "_id": "5891c007d12c6132801cc8be"
-        },
-        {
-            "productName": "SanDisk Ultra MicroSDHC 32GB UHS-I Class 10 Memory Card With Adapter (Upto 80mbps Speed)",
-            "price": "  809.00",
-            "rating": "",
-            "_id": "5891c007d12c6132801cc8bf"
+            "productUrl": "http://www.amazon.in/Coolpad-Mega-2-5D-Grey/dp/B01FM7GO8C/ref=lp_1389401031_1_17/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-17",
+            "_id": "5894e020e7c30e33f43b7c75"
         },
         {
             "productName": "Moto G Plus, 4th Gen (White, 32 GB) - Android 7.0 Nougat Update Available Now",
-            "price": "  13,999.00",
+            "price": "  13,999",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8c0"
+            "productUrl": "http://www.amazon.in/Moto-Plus-4th-Gen-White/dp/B01DDP85BY/ref=lp_1389401031_1_18/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-18",
+            "_id": "5894e020e7c30e33f43b7c76"
         },
         {
-            "productName": "Moto G Plus, 4th Gen (Black, 16 GB) - Android 7.0 Nougat Update Available Now",
-            "price": "  12,499.00",
+            "productName": "SanDisk Ultra MicroSDHC 16GB UHS-I Class 10 Memory Card (SDSQUNB-016G-GN3MN)",
+            "price": "  509",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8c1"
+            "productUrl": "http://www.amazon.in/SanDisk-Ultra-MicroSDHC-Memory-SDSQUNB-016G-GN3MN/dp/B010NE3U2M/ref=lp_1389401031_1_19/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-19",
+            "_id": "5894e020e7c30e33f43b7c77"
+        },
+        {
+            "productName": "Samsung Evo+ 32GB Class 10 micro SDHC Card Upto 80 Mbps speed (With adapter)",
+            "price": "  749",
+            "rating": "",
+            "productUrl": "http://www.amazon.in/Samsung-Class-micro-speed-adapter/dp/B00WR4IJBE/ref=lp_1389401031_1_20/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-20",
+            "_id": "5894e020e7c30e33f43b7c78"
         },
         {
             "productName": "Samsung Evo 16GB Class 10 micro SDHC Card (MB-MP16D/IN)",
-            "price": "  460.00",
+            "price": "  419",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8c2"
+            "productUrl": "http://www.amazon.in/Samsung-16GB-Class-micro-MB-MP16D/dp/B007HJPBME/ref=lp_1389401031_1_21/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-21",
+            "_id": "5894e020e7c30e33f43b7c79"
         },
         {
-            "productName": "Intex IT-PB11K 11000mAH Power Bank (Black)",
-            "price": "  929.00",
+            "productName": "Strontium Nitro 32GB 70MB/s UHS-1 Class 10 microsdhc Memory card (without adapter/card reader)",
+            "price": "  649",
             "rating": "",
-            "_id": "5891c007d12c6132801cc8c3"
+            "productUrl": "http://www.amazon.in/Strontium-microsdhc-Memory-without-adapter/dp/B00VMYK3DM/ref=lp_1389401031_1_22/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-22",
+            "_id": "5894e020e7c30e33f43b7c7a"
+        },
+        {
+            "productName": "Moto G Plus, 4th Gen (Black, 16 GB) - Android 7.0 Nougat Update Available Now",
+            "price": "  12,499",
+            "rating": "",
+            "productUrl": "http://www.amazon.in/Moto-Plus-4th-Gen-Black/dp/B01DDP87N0/ref=lp_1389401031_1_23/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-23",
+            "_id": "5894e020e7c30e33f43b7c7b"
+        },
+        {
+            "productName": "SanDisk Ultra MicroSDHC 32GB UHS-I Class 10 Memory Card With Adapter (Upto 80mbps Speed)",
+            "price": "  809",
+            "rating": "",
+            "productUrl": "http://www.amazon.in/SanDisk-MicroSDHC-Memory-Adapter-80mbps/dp/B010Q57T02/ref=lp_1389401031_1_24/255-5903611-9974057?s=electronics&ie=UTF8&qid=1486151705&sr=1-24",
+            "_id": "5894e020e7c30e33f43b7c7c"
         }
     ],
     "insertedCount": 24,
     "insertedIds": [
-        "5891c007d12c6132801cc8ac",
-        "5891c007d12c6132801cc8ad",
-        "5891c007d12c6132801cc8ae",
-        "5891c007d12c6132801cc8af",
-        "5891c007d12c6132801cc8b0",
-        "5891c007d12c6132801cc8b1",
-        "5891c007d12c6132801cc8b2",
-        "5891c007d12c6132801cc8b3",
-        "5891c007d12c6132801cc8b4",
-        "5891c007d12c6132801cc8b5",
-        "5891c007d12c6132801cc8b6",
-        "5891c007d12c6132801cc8b7",
-        "5891c007d12c6132801cc8b8",
-        "5891c007d12c6132801cc8b9",
-        "5891c007d12c6132801cc8ba",
-        "5891c007d12c6132801cc8bb",
-        "5891c007d12c6132801cc8bc",
-        "5891c007d12c6132801cc8bd",
-        "5891c007d12c6132801cc8be",
-        "5891c007d12c6132801cc8bf",
-        "5891c007d12c6132801cc8c0",
-        "5891c007d12c6132801cc8c1",
-        "5891c007d12c6132801cc8c2",
-        "5891c007d12c6132801cc8c3"
+        "5894e020e7c30e33f43b7c65",
+        "5894e020e7c30e33f43b7c66",
+        "5894e020e7c30e33f43b7c67",
+        "5894e020e7c30e33f43b7c68",
+        "5894e020e7c30e33f43b7c69",
+        "5894e020e7c30e33f43b7c6a",
+        "5894e020e7c30e33f43b7c6b",
+        "5894e020e7c30e33f43b7c6c",
+        "5894e020e7c30e33f43b7c6d",
+        "5894e020e7c30e33f43b7c6e",
+        "5894e020e7c30e33f43b7c6f",
+        "5894e020e7c30e33f43b7c70",
+        "5894e020e7c30e33f43b7c71",
+        "5894e020e7c30e33f43b7c72",
+        "5894e020e7c30e33f43b7c73",
+        "5894e020e7c30e33f43b7c74",
+        "5894e020e7c30e33f43b7c75",
+        "5894e020e7c30e33f43b7c76",
+        "5894e020e7c30e33f43b7c77",
+        "5894e020e7c30e33f43b7c78",
+        "5894e020e7c30e33f43b7c79",
+        "5894e020e7c30e33f43b7c7a",
+        "5894e020e7c30e33f43b7c7b",
+        "5894e020e7c30e33f43b7c7c"
     ]
 }

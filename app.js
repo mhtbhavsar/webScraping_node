@@ -8,66 +8,6 @@ var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/AmazonProducts');
 
-//webscraping start
-// var path = require('path');
-// var request = require('request');
-// var cheerio = require('cheerio');
-// var fs = require('fs');
-
-/*
-
-//example 1
-var url = 'http://google.com';
-
-request(url, function(err, resp, body){
-	if(err) {
-		console.log(err);
-
-	}
-	else {
-		console.log(body);
-	}
-
-});
-*/
-
-//example 2
-
-// var destination = fs.createWriteStream('./downloads/google.html');
-// var url = 'http://google.com';
-
-// request(url).pipe(destination);
-
-
-// //example 3
-// var destination = fs.createWriteStream('./downloads/google2.html');
-// var url = 'http://google.com';
-
-// request(url)
-//     .pipe(destination)
-//     .on('finish', function() {
-//         console.log('file downloaded');
-//     }).on('error', function() {
-//         console.log('error occured');
-//     });
-
-
-// //example 4
-// var destination = fs.createWriteStream('./downloads/google2.html');
-// var url = 'http://google.com';
-
-// request(url)
-//     .pipe(destination);
-
-// destination.on('finish', function() {
-//     console.log('file downloaded');
-// }).on('error', function() {
-//     console.log('error occured');
-// });
-
-
-//webscraping end
-
 var index = require('./routes/index');
 var users = require('./routes/users');
 var webScrape = require('./routes/webScrape');
@@ -78,8 +18,6 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

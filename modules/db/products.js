@@ -5,6 +5,8 @@ var productSchema = mongoose.Schema({
     productName: { type: String },
     price: { type: String },
     rating: { type: String },
+    productUrl : { type: String },
+    productImg : [String]
 
 }, { collection: 'product' });
 
