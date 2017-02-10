@@ -5,6 +5,7 @@ var path = require('path');
 var request = require('request');
 var cheerio = require('cheerio');
 var fs = require('fs');
+var def = Promise.defer();
 
 
 // var promise = deferred.promise;
@@ -14,7 +15,7 @@ var Product = require('../modules/db/products');
 var products = [];
 var prodURLs = [];
 
-var url = 'http://www.amazon.in/s/ref=lp_1389401031_pg_1?rh=n%3A976419031%2Cn%3A%21976420031%2Cn%3A1389401031&page=1&ie=UTF8&qid=1485429430&spIA=B01MCYNO0A,B01LL1J04I,B01LF0I76W';
+var url = 'http://www.amazon.in/mobile-phones/b/ref=sv_e_1?node=1389401031';
 
 var URLs = generateUrls(1);
 
@@ -34,119 +35,32 @@ function generateUrls(limit) {
     return urls
 }
 
-
-function getData(endpoint) {
-    var deferred = Promise.defer();
-
-    deferred.resolve(endpoint + " i m mohit");
-
-    return deferred.promise
-}
-
-var loadData = function(endpoint) {
-
-    getProductsURL(URLs).then((pURLs) => {
-
-        console.log(" in prodURL then section" + pURLs);
-        console.log("please check the database")
-
-    }).catch((err) => { condole.log(err) });
-
-    getData(endpoint).then((data) => {
-        console.log("something : " + data)
-    }).catch((err) => { console.log("error caught" + err) });
-
-}
-
-// loadData("hi");
-
-function getProductsData(productUrl) {
-
-    return new Promise((resolve) => {
-        // setTimeout(() => {
-        // console.log("Resolving " + value);
-        var body = request(productUrl, function(err, res, body) {
-            if (err) {
-                console.log("error in getting product Data" + err);
-            } else {
-                var $$ = cheerio.load(body, {
-                    ignoreWhitespace: true
-                });
-                // body = "";
-                var productName = $$('#productTitle');
-
-                console.log("got a product names : " + productName.text());
-                // $ = "";
-                resolve(productName.text())
-            }
-
-        });
-
-        // }, Math.floor(Math.random() * 1000));
-    });
-
-    // var deferred = Promise.defer();
-    // request(productUrl, function(err, res, body) {
-    //     console.log("\n Data request : " + productUrl);
-    //     var $ = cheerio.load(body, {
-    //         ignoreWhitespace: true
-    //     });
-
-    //     var productName = $('#productTitle');
-
-    //     console.log("got a product names : " + productName.text());
-    //     deferred.resolve(productName);
-
-    // });
-
-    // return deferred.promise;
-
-}
-
-getProductsURL(URLs)
-    // .then((prodUrls) => {
-    //     console.log("products urls here : " + prodUrls);
-    //     var prodPromiseFunctions = [];
-    //     for (key in prodUrls) {
-    //         (function(uri) {
-    //             prodPromiseFunctions.push(getProductsData(uri));
-    //         })(prodUrls[key]);
-
-//     }
-
-//     Promise.all(prodPromiseFunctions)
-//         .then(function(product) {
-//             console.log(product);
-//             console.log("Got all the products....!")
-//         }).catch((e) => {
-//             throw e;
-//         });
-// })
-.then(function() {
+getProductsURL().then(function() {
     console.log("end is here....! : \n" + products)
+    console.log("Please check the database 'AmazonProducts'")
 }).catch((err) => {
     console.log("err occured" + err);
 });
 
-function getProductsURL(URL) {
-    console.log("scraping started for :" + URL[0]);
-    var def = Promise.defer();
+function getProductsURL() {
+    console.log("scraping started for :" + url +" do not close before ");
+
     var prodPromiseFunctions = [];
 
-    var r = request(URL[0], function(err, res, body) {
-        console.log("request : " + URL[0]);
+    var r = request(url, function(err, res, body) {
+        console.log("request for : " + url);
         var $ = cheerio.load(body, {
             ignoreWhitespace: true
         });
-        body = "";
         var result = '#result_';
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 24; i++) {
             var productName = $(result + i + ' .s-access-detail-page .s-access-title');
             var prodUrl = productName.parent().attr('href');
-            prodPromiseFunctions.push(getProductsData(prodUrl))
-                // prodURLs.push(prodUrl);
+            prodPromiseFunctions.push(getProductsData(url, prodUrl));
+            // prodURLs.push(prodUrl);
         }
-        $ = "";
+
+    }, function() {
         Promise.all(prodPromiseFunctions)
             .then(function(product) {
                 def.resolve(product);
@@ -155,15 +69,89 @@ function getProductsURL(URL) {
             });
     });
 
+
+
     return def.promise;
 
 }
 
+
+function getProductsData(pageUrl, productUrl) {
+
+    return new Promise((resolve) => {
+        // setTimeout(() => {
+        // console.log("Resolving " + value);
+        var body = request(productUrl, function(err, res, body) {
+            console.log("\n product request for : " + productUrl);
+            if (err) {
+                console.log("error in getting product Data" + err);
+            } else {
+                var $$ = cheerio.load(body, {
+                    ignoreWhitespace: true
+                });
+
+                var productName = $$('#productTitle');
+                var productBrand = $$('#brand');
+                var price = $$('#priceblock_ourprice');
+                var customerReviews = $$('#acrCustomerReviewText');
+
+                var imgs = [];
+                $$("#altImages li img").each(function(i, el) {
+                    imgs.push($$(this).attr('src'));
+                });
+
+                var features = [];
+                $$("#feature-bullets").each(function(i, el) {
+                    var feature = $$(this).find('li span');
+                    features.push(feature.text());
+                    console.log(features);
+                });
+
+                var product = {
+                    pageUrl: pageUrl,
+                    productName: productName.text(),
+                    productUrl: productUrl,
+                    productBrand: productBrand.text(),
+                    price: price.text(),
+                    customerReviews: customerReviews.text(),
+                    imgs: imgs,
+                    features: features
+                };
+                console.log("got a product names : " + productName.text());
+                if (!product) {
+                    console.log("empty product");
+                } else {
+                    Product.createProduct(product, function(err, prod) {
+                        if (err) {
+                            console.log("error in insertion of new products : \n" + err);
+                        } else {
+                            // fs.writeFile('jsonFiles/Products.json', JSON.stringify(products, null, 4), function(err) {
+                            //     if (err) {
+                            //         console.log("error in file writing : \n" + err);
+                            //     } else
+                            //         console.log('jsonFiles/Products' + pages + '.json writed');
+
+                            // })
+                            console.log("product added to the database => \n ID :" +prod._id+"\n Product : "+prod.productName);
+                        }
+                    })
+                }
+
+                // console.log(JSON.stringify(product));
+
+                resolve(productName.text());
+            }
+
+        });
+
+    });
+}
+
+
+
 /*for single products*/
 router.get('/test', function(req, resp) {
     console.log("in test section");
-
-
 });
 
 /* end */
